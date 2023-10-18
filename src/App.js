@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+// import { PureComponent } from 'react';
 import './App.css';
+import HocData from './reacthandson5/Hocdata';
+import Hocfunction1 from './reacthandson5/Hocfunction1';
+import Hocfunction2 from './reacthandson5/Hocfunction2';
+import { Purecomponent } from './reacthandson5/Purecomponent';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hocfunction1 val={HocData}/>
+      <Hocfunction2 val={HocData}/>
+      <Purecomponent/>
     </div>
   );
 }
